@@ -23,13 +23,13 @@ Research and Work experience
 
 * 2023.4-2023.7: ASABE Robotics Student Design Competition
   * Zhejiang University, Agricultural Robot Club
-  * Award: Second Place, Best Written Report
-  * Duties included: Led a team to design a cotton-picking robot using machine vision algorithms on Jetson Nano, which communicated with Arduino for control.
+  * Award: Second Place, [Best Written Report](../assets/Written Report by D.A.D.pdf)
+  * Duties included: Led a team to design a cotton-picking robot using machine vision algorithms on Jetson Nano, which communicated with Arduino for control.[Poster](../assets/Poster_2023ASABE Rbotics Student Design COmpetition_Team D.A.D.pdf)
   
 Skills
 ======
 * Coding:  C++ / Python
-* Ros
+* ROS
 * Mechanical Structure Design
   * Solidworks
   * CAD
