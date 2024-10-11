@@ -21,10 +21,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "personal_.png"
-  name             : "TonyZhao"
+  avatar           : "profile.png"
+  name             : "Antian Zhao(Tony)"
   pronouns         : # example: "she/her"  
-  bio              : "Humble Challenger"
+  bio              : "zju | 🧑‍💻Bio-system Engineer 🔧 | 🤖Robot Developer | ITP"
   location         : "China Hangzhou"
   employer         : "Zhejiang University"
   uri              : https://zjutony.github.io # URL
