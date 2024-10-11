@@ -11,54 +11,38 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Mechanical Engineering, Zhejiang University, 2024--now
+* B.S. in Biosystems Engineering, Zhejiang University, 2020-2024
 
-Work experience
+Research and Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2023.12-2024.5: Research on Automated Micro-Operation System for Bio-breeding
+  * Zhejiang University, Micro-nano Manipulation Lab
+  * Award: Top Ten Graduation Thesis in Biosystems Engineering and Food Science
+  * Duties includes: I built a micro-injection platform based on microfluidic chips for zebrafish embryo cells and proposed a YOLOv8-based keypoint detection algorithm for cell location, which improved the efficiency of the detection process.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2023.4-2023.7: ASABE Robotics Student Design Competition
+  * Zhejiang University, Agricultural Robot Club
+  * Award: Second Place, Best Written Report
+  * Duties included: Led a team to design a cotton-picking robot using machine vision algorithms on Jetson Nano, which communicated with Arduino for control.
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Coding:  C++ / Python
+* Ros
+* Mechanical Structure Design
+  * Solidworks
+  * CAD
+* Video Editing Skills
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Head of Zhejiang University ARC Club (2023-2024)
+* Vice Chairman of Zhejiang University Entrepreneurship Alliance (2022-2023)
+* Deputy Secretary of the Youth League Committee, Biosystems Engineering and Food Science College, Zhejiang University (2022-2023)
