@@ -2,7 +2,7 @@
 title: "Design and testing of a new microinjector with FBG force sensor for robot-assisted single cell microinjection"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2023-11-15-paper-title-FBG
 excerpt: 'In this article, a novel force-sensing microinjector is presented based on fiber Bragg grating (FBG) sensors to precept three-dimensional (3D) forces.'
 date: 2023-11-15
 venue: 'Measurement'
