@@ -3,7 +3,7 @@ title: "Robotic Cell Micromanipulation for Posture Adjustment of Zebrafish Embry
 collection: conference
 category: manuscripts
 permalink: /publication/2025-02-20-paper-title-MicroInjection
-excerpt: 'Precise posture adjustment of biological cells is a critical prerequisite for downstream micromanipulation tasks such as microinjection and cell surgery. In this study, we present a novel robotic micromanipulation strategy for in-plane orientation adjustment of zebrafish embryonic cells using an imitation learning framework with a mixture of experts strategy (MEIL).  '
+excerpt: 'In this study, we present a novel robotic micromanipulation strategy for in-plane orientation adjustment of zebrafish embryonic cells using an imitation learning framework with a mixture of experts strategy (MEIL).  '
 date: 2025-07-29
 venue: 'The First International Conference on Cyborg and Bionic Systems'
 slidesurl: 'Waiting for pub'
