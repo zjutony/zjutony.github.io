@@ -11,7 +11,10 @@ locale                   : "en-US"
 title                    : "Tony's Personal Homepage"
 title_separator          : "-"
 name                     : &name "Antian Zhao(Tony)"
-description              : &description "🧑‍💻 Master's student in Mechanical Engineering in ZJU \n 🤖 Robot Developer \n 🔧 Bio-system Engineer \n "
+description              : &description |
+🧑‍💻 Master's student in Mechanical Engineering in ZJU 
+🤖 Robot Developer 
+🔧 Bio-system Engineer 
 url                      : https://zjutony.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/zjutony"
