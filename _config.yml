@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Tony's Personal Homepage"
+title                    : "TonyAT's Personal Homepage"
 title_separator          : "-"
 name                     : &name "Antian Zhao(Tony)"
 description              : &description "🧑‍💻 Master's student in Mechanical Engineering in ZJUs \n| 🤖 Robot Developer \n| 🔧 Bio-system Engineer \n| "
