@@ -29,6 +29,8 @@ Research and Work experience
 Skills
 ======
 * Coding:  C++ / Python
+* DeepLearning / ReinforcementLearning
+* LLM / VLA
 * ROS
 * Mechanical Structure Design
   * Solidworks
