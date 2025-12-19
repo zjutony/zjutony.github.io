@@ -1,5 +1,5 @@
 ---
-title: '俞军产品方法论'
+title: '读书笔记：《俞军产品方法论》'
 date: 2025-12-25
 permalink: /posts/2025-12-25-BookReadingRecord
 tags:
@@ -8,7 +8,7 @@ tags:
   - category2
 ---
 
-Waitting to be done!  
+Coming soon!  
 
 Why I read this?
 ======
