@@ -2,6 +2,7 @@
 title: '读书笔记：《置身事内》'
 date: 2025-1-31
 permalink: /posts/2025-01-31-BookReadingRecord
+external_url: https://ai.feishu.cn/docx/GIRAdYwrgopEQix8qpJckFeWnNd
 tags:
   - 读书笔记
   - 其他
