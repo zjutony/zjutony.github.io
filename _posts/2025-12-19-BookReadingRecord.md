@@ -1,6 +1,6 @@
 ---
 title: '俞军产品方法论'
-date: 2025-12-20
+date: 2025-12-19
 permalink: /posts/2025-12-19-BookReadingRecord.md
 tags:
   - cool posts
