@@ -14,9 +14,9 @@ redirect_from:
     <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, working on robot learning, computer vision, and autonomous systems.</p>
     <p class="home-hero__body">Robot learning is the future. I focus on manipulation, perception, and practical systems, while also exploring startup ideas and product thinking.</p>
     <div class="home-hero__links">
-      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
-      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
-      {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+      {% if site.author.email %}<a class="home-hero__icon-link" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>{% endif %}
+      {% if site.author.github %}<a class="home-hero__icon-link" href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>{% endif %}
+      {% if site.author.linkedin %}<a class="home-hero__icon-link" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>{% endif %}
       {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a>{% endif %}
       {% if site.author.youtube %}<a href="https://www.youtube.com/@{{ site.author.youtube }}">YouTube</a>{% endif %}
     </div>

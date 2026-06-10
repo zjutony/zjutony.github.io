@@ -313,40 +313,40 @@
 }
 
 .home-page {
-  background: #090c11;
-  color: #cfd5dd;
-  color-scheme: dark;
+  background: #ffffff;
+  color: #111111;
+  color-scheme: light;
 
   .page__inner-wrap {
-    max-width: 880px;
+    max-width: 860px;
   }
 
   .page__content {
-    color: #cfd5dd;
+    color: #111111;
 
     p,
     li,
     dl {
-      font-size: 0.86rem;
-      line-height: 1.55;
+      font-size: 0.82rem;
+      line-height: 1.5;
     }
 
     h2,
     h3 {
-      color: #eef2f6;
+      color: #111111;
     }
 
     a {
-      color: #edf1f6;
-      text-decoration-color: rgba(237, 241, 246, 0.35);
+      color: #111111;
+      text-decoration-color: rgba(17, 17, 17, 0.25);
     }
   }
 }
 
 .home-hero__eyebrow {
   margin-bottom: 0.8rem;
-  color: #9aa4b2;
-  font-size: 0.64rem;
+  color: #666666;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -354,7 +354,7 @@
 
 .home-hero h1 {
   margin: 0;
-  font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
@@ -363,16 +363,16 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 42rem;
-  color: #d2d8df;
-  font-size: 0.88rem;
-  line-height: 1.5;
+  color: #222222;
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 .home-hero__body {
   max-width: 40rem;
-  color: #98a2b1;
-  font-size: 0.82rem;
-  line-height: 1.55;
+  color: #444444;
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .home-hero__links {
@@ -384,20 +384,28 @@
   a {
     display: inline-flex;
     align-items: center;
-    padding: 0.7rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 1px solid rgba(17, 17, 17, 0.14);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.03);
-    color: #eef2f6;
-    font-size: 0.76rem;
+    background: #ffffff;
+    color: #111111;
+    font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
+    i {
+      font-size: 0.82rem;
+      line-height: 1;
+    }
+
     &:hover {
       transform: translateY(-1px);
-      border-color: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+      border-color: rgba(17, 17, 17, 0.28);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
       text-decoration: none;
     }
   }
@@ -410,15 +418,15 @@
   margin-top: 1rem;
 
   a {
-    color: #aeb7c4;
-    font-size: 0.76rem;
+    color: #444444;
+    font-size: 0.72rem;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 
     &:hover {
-      color: #f2f5f8;
-      border-bottom-color: #f2f5f8;
+      color: #111111;
+      border-bottom-color: #111111;
       text-decoration: none;
     }
   }
@@ -428,10 +436,10 @@
   justify-self: end;
   width: min(100%, 320px);
   padding: 0.85rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(16, 20, 27, 0.98), rgba(9, 12, 17, 0.98));
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
 
   img {
     display: block;
@@ -446,13 +454,13 @@
 
 .home-hero__note {
   margin-top: 0.9rem;
-  color: #8f99a7;
-  font-size: 0.7rem;
+  color: #666666;
+  font-size: 0.66rem;
 }
 
 .home-section {
   padding: 1rem 0 1.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(17, 17, 17, 0.08);
 }
 
 .home-section__head {
@@ -463,16 +471,16 @@
 
   p {
     margin: 0.3rem 0 0;
-    color: #8f99a7;
-    font-size: 0.78rem;
+    color: #666666;
+    font-size: 0.72rem;
   }
 
   h2 {
     margin-top: 0;
     padding-bottom: 0;
     border-bottom: 0;
-    color: #eef2f6;
-    font-size: 0.9rem;
+    color: #111111;
+    font-size: 0.84rem;
     letter-spacing: 0.01em;
   }
 }
@@ -500,52 +508,52 @@
 
 .home-list--compact {
   .home-card {
-    padding: 0.7rem 0.82rem;
+    padding: 0.66rem 0.78rem;
   }
 }
 
 .home-card {
   padding: 1.1rem 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
   box-shadow: none;
 
   h3 {
     margin-top: 0;
     margin-bottom: 0.55rem;
-    color: #eef2f6;
-    font-size: 0.82rem;
+    color: #111111;
+    font-size: 0.78rem;
   }
 
   p {
     margin-bottom: 0;
-    color: #98a2b1;
-    font-size: 0.78rem;
+    color: #555555;
+    font-size: 0.72rem;
   }
 }
 
 .home-card--accent {
-  border-color: rgba(255, 255, 255, 0.12);
-  background: linear-gradient(180deg, rgba(18, 23, 31, 0.94), rgba(12, 16, 22, 0.98));
+  border-color: rgba(17, 17, 17, 0.12);
+  background: #fafafa;
 }
 
 .home-card--pub {
   h3 {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     margin-bottom: 0.25rem;
   }
 
   .home-card__meta {
     margin: 0 0 0.5rem;
-    color: #9aa4b2;
-    font-size: 0.7rem;
+    color: #666666;
+    font-size: 0.66rem;
   }
 
   .home-card__authors {
     margin: 0;
-    color: #b8c0cb;
-    font-size: 0.74rem;
+    color: #444444;
+    font-size: 0.7rem;
   }
 }
 
@@ -559,21 +567,21 @@
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
   padding: 0.72rem 0.82rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
 
   h3 {
     margin-top: 0;
     margin-bottom: 0.35rem;
-    color: #eef2f6;
-    font-size: 0.82rem;
+    color: #111111;
+    font-size: 0.78rem;
   }
 
   p {
     margin-bottom: 0;
-    color: #98a2b1;
-    font-size: 0.78rem;
+    color: #555555;
+    font-size: 0.72rem;
   }
 
   @include breakpoint(max-width $medium) {
@@ -582,8 +590,8 @@
 }
 
 .home-timeline__date {
-  color: #9aa4b2;
-  font-size: 0.68rem;
+  color: #666666;
+  font-size: 0.64rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -594,8 +602,8 @@
 
   p {
     margin: 0;
-    color: #b8c0cb;
-    font-size: 0.78rem;
+    color: #444444;
+    font-size: 0.72rem;
   }
 }
 
