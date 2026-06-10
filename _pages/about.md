@@ -8,8 +8,14 @@ redirect_from:
 ---
 
 <div class="home-hero">
+  <div class="home-hero__portrait">
+    <img src="/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+    <div class="home-hero__note">Based in Hangzhou · Zhejiang University</div>
+  </div>
+
   <div class="home-hero__content">
-    <h1>{{ site.author.name }}</h1>
+    <h1>About me</h1>
+    <h2>Antian Zhao(Tony)</h2>
     <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, working on robot learning, computer vision, and autonomous systems. Robot learning is the future. I focus on manipulation, perception, and practical systems, while also exploring startup ideas and product thinking.</p>
     <div class="home-hero__links">
       {% if site.author.email %}<a class="home-hero__icon-link" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>{% endif %}
@@ -24,11 +30,6 @@ redirect_from:
       <a href="#experience">Working Experience</a>
       <a href="#projects">Personal Projects</a>
     </div>
-  </div>
-
-  <div class="home-hero__portrait">
-    <img src="/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
-    <div class="home-hero__note">Based in Hangzhou · Zhejiang University</div>
   </div>
 </div>
 
