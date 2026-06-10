@@ -302,7 +302,7 @@
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.85fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
   padding: 1rem 0 1.5rem;
@@ -433,7 +433,7 @@
 }
 
 .home-hero__portrait {
-  justify-self: end;
+  justify-self: center;
   width: min(100%, 320px);
   padding: 0.85rem;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -450,6 +450,12 @@
   @include breakpoint(max-width $medium) {
     justify-self: start;
   }
+}
+
+.home-hero__content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .home-hero__note {
