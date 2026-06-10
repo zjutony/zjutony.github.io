@@ -1,8 +1,11 @@
 :root{--bg:#fff;--text:#111;--muted:#666;--accent:#000;--avatar-size:260px}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:var(--text)}
-.sh-container{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 20px}
-.sh-card{max-width:760px;width:100%;text-align:center}
+.sh-page{max-width:980px;margin:0 auto;padding:48px 20px 72px}
+.sh-hero,.sh-section{width:100%}
+.sh-card{text-align:center}
+.sh-hero{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100vh - 96px);padding-bottom:32px}
 .sh-avatar{width:var(--avatar-size);height:var(--avatar-size);object-fit:cover;border-radius:50%;box-shadow:0 30px 60px rgba(0,0,0,0.12);display:block;margin:0 auto 26px;border:4px solid #fff}
 .sh-title{margin:0;font-size:1rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;font-weight:700;text-align:center}
 .sh-name{margin:6px 0 12px;font-size:2.1rem;letter-spacing:-0.02em;text-align:center}
@@ -10,10 +13,42 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",
 .sh-social{display:flex;gap:12px;justify-content:center;margin-top:8px}
 .sh-social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #e6e6e6;border-radius:999px;color:var(--text);text-decoration:none;font-size:18px}
 .sh-social a:hover{background:#f4f4f4}
+.sh-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.sh-nav a{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid #e7e7e7;border-radius:999px;color:var(--text);text-decoration:none;font-size:.92rem;font-weight:600;background:#fff}
+.sh-nav a:hover{border-color:#cfcfcf;box-shadow:0 6px 16px rgba(0,0,0,.05)}
+.sh-content{margin-top:24px}
+.sh-section{padding:34px 0;border-top:1px solid #ececec}
+.sh-section:first-of-type{border-top:0}
+.sh-section-head{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start;margin-bottom:18px}
+.sh-section-head h3{margin:0;font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
+.sh-section-head p{margin:0;color:var(--muted);line-height:1.6}
+.sh-research-list{display:grid;gap:12px}
+.sh-paper{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid #f0f0f0}
+.sh-paper:last-child{border-bottom:0}
+.sh-paper-year{font-size:.98rem;font-weight:700;color:#777;text-align:center;padding-top:3px}
+.sh-paper-body h4,.sh-info-card h4,.sh-timeline-item h4{margin:0 0 6px;font-size:1rem;line-height:1.45}
+.sh-paper-body a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent}
+.sh-paper-body a:hover{text-decoration:none;border-bottom-color:#111}
+.sh-paper-body p{margin:0;color:#777;font-size:.9rem}
+.sh-timeline{display:grid;gap:12px}
+.sh-timeline-item{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid #f0f0f0}
+.sh-timeline-item:last-child{border-bottom:0}
+.sh-timeline-year{font-size:.92rem;font-weight:700;color:#777;text-align:center;padding-top:2px}
+.sh-timeline-item p{margin:0;color:#444;line-height:1.6}
+.sh-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.sh-info-card{padding:18px;border:1px solid #ececec;border-radius:20px;background:#fff;box-shadow:0 12px 32px rgba(0,0,0,.04)}
+.sh-info-card p{margin:0 0 10px;color:#444;line-height:1.65}
+.sh-info-card p:last-child{margin-bottom:0}
+.sh-info-card--accent{background:linear-gradient(180deg,#fff,#fafafa)}
 
 @media (max-width:720px){
+  .sh-page{padding:28px 16px 48px}
+  .sh-hero{min-height:auto;padding-bottom:20px}
   .sh-avatar{width:calc(var(--avatar-size) * 0.78);height:calc(var(--avatar-size) * 0.78)}
   .sh-name{font-size:1.6rem}
-  .sh-card{padding:0 8px}
   .sh-lead{text-align:left}
+  .sh-section-head{grid-template-columns:1fr;gap:8px}
+  .sh-paper,.sh-timeline-item{grid-template-columns:1fr;gap:8px}
+  .sh-paper-year,.sh-timeline-year{text-align:left}
+  .sh-cards{grid-template-columns:1fr}
 }

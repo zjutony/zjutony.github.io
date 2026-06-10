@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/assets/css/simple-home.css">
 </head>
 <body>
-  <main class="sh-container">
-    <header class="sh-card">
+  <main class="sh-page">
+    <header class="sh-hero sh-card">
       <img class="sh-avatar" src="/images/personal_.png" alt="Antian Zhao (Tony)">
       <h1 class="sh-title">About me</h1>
       <h2 class="sh-name">Antian Zhao (Tony)</h2>
@@ -23,7 +23,112 @@
         <a href="https://orcid.org/0000-0003-2435-7859" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
         <a href="https://www.youtube.com/@antianZhao" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
+
+      <nav class="sh-nav" aria-label="Section navigation">
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Working Experience</a>
+        <a href="#projects">Personal Projects</a>
+      </nav>
     </header>
+
+    <div class="sh-content">
+      <section class="sh-section" id="research">
+        <div class="sh-section-head">
+          <h3>Research</h3>
+          <p>Selected publications on micromanipulation, microinjection, and vision-driven robotic systems.</p>
+        </div>
+        <div class="sh-research-list">
+          <article class="sh-paper">
+            <div class="sh-paper-year">2025</div>
+            <div class="sh-paper-body">
+              <h4><a href="https://ieeexplore.ieee.org/abstract/document/11230522/">Scheduling Adaptive Imitation Learning for Long-Horizon Dexterous Robot Micromanipulation of Deformable Cell</a></h4>
+              <p>IEEE Robotics and Automation Letters</p>
+            </div>
+          </article>
+          <article class="sh-paper">
+            <div class="sh-paper-year">2025</div>
+            <div class="sh-paper-body">
+              <h4><a href="https://www.nature.com/articles/s41378-024-00809-y">Design and developing a robot-assisted cell batch microinjection system for zebrafish embryo</a></h4>
+              <p>Microsystems &amp; Nanoengineering</p>
+            </div>
+          </article>
+          <article class="sh-paper">
+            <div class="sh-paper-year">2025</div>
+            <div class="sh-paper-body">
+              <h4><a href="https://iopscience.iop.org/article/10.1088/1742-6596/3101/1/012014">Robotic Cell Micromanipulation for Posture Adjustment of Zebrafish Embryonic Cells</a></h4>
+              <p>The First International Conference on Cyborg and Bionic Systems</p>
+            </div>
+          </article>
+          <article class="sh-paper">
+            <div class="sh-paper-year">2023</div>
+            <div class="sh-paper-body">
+              <h4><a href="https://www.sciencedirect.com/science/article/pii/S0263224123010746">Design and testing of a new microinjector with FBG force sensor for robot-assisted single cell microinjection</a></h4>
+              <p>Measurement</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sh-section" id="education">
+        <div class="sh-section-head">
+          <h3>Education</h3>
+          <p>Academic training in engineering, robotics, and biosystems.</p>
+        </div>
+        <div class="sh-timeline">
+          <article class="sh-timeline-item">
+            <div class="sh-timeline-year">2024 - now</div>
+            <div>
+              <h4>Zhejiang University</h4>
+              <p>M.S. in Mechanical Engineering.</p>
+            </div>
+          </article>
+          <article class="sh-timeline-item">
+            <div class="sh-timeline-year">2020 - 2024</div>
+            <div>
+              <h4>Zhejiang University</h4>
+              <p>B.S. in Biosystems Engineering.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sh-section" id="experience">
+        <div class="sh-section-head">
+          <h3>Working Experience</h3>
+          <p>Research and project experience in robotics, micro-manipulation, and automation.</p>
+        </div>
+        <div class="sh-cards">
+          <article class="sh-info-card">
+            <h4>Research on Automated Micro-Operation System for Bio-breeding</h4>
+            <p>2023.12 - 2024.5 · Zhejiang University, Micro-nano Manipulation Lab</p>
+            <p>Built a micro-injection platform based on microfluidic chips for zebrafish embryo cells and proposed a YOLOv8-based keypoint detection algorithm for cell location.</p>
+          </article>
+          <article class="sh-info-card">
+            <h4>ASABE Robotics Student Design Competition</h4>
+            <p>2023.4 - 2023.7 · Zhejiang University, Agricultural Robot Club</p>
+            <p>Led a team to design a cotton-picking robot using machine vision algorithms on Jetson Nano, communicating with Arduino for control.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="sh-section" id="projects">
+        <div class="sh-section-head">
+          <h3>Personal Projects</h3>
+          <p>Small systems and ideas that explore robotics, learning, and product thinking.</p>
+        </div>
+        <div class="sh-cards sh-cards-projects">
+          <article class="sh-info-card sh-info-card--accent">
+            <h4>Autonomous robot manipulation demos</h4>
+            <p>Prototype systems connecting perception, control, and learning for dexterous tasks.</p>
+          </article>
+          <article class="sh-info-card sh-info-card--accent">
+            <h4>Technical writing and reading notes</h4>
+            <p>Selected reflections on books, papers, and practical engineering topics, kept as a running archive.</p>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
 </html>
