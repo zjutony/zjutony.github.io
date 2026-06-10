@@ -305,7 +305,7 @@
   grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.85fr);
   gap: 2rem;
   align-items: center;
-  padding: 1.75rem 0 2.4rem;
+  padding: 1.25rem 0 1.9rem;
 
   @include breakpoint(max-width $medium) {
     grid-template-columns: 1fr;
@@ -313,28 +313,28 @@
 }
 
 .home-page {
-  background: #0b0f14;
-  color: #d4d8df;
+  background: #090c11;
+  color: #cfd5dd;
   color-scheme: dark;
 
   .page__content {
-    color: #d4d8df;
+    color: #cfd5dd;
 
     p,
     li,
     dl {
-      font-size: 0.96rem;
-      line-height: 1.72;
+      font-size: 0.9rem;
+      line-height: 1.6;
     }
 
     h2,
     h3 {
-      color: #f4f6f8;
+      color: #eef2f6;
     }
 
     a {
-      color: #e6ebf2;
-      text-decoration-color: rgba(230, 235, 242, 0.45);
+      color: #edf1f6;
+      text-decoration-color: rgba(237, 241, 246, 0.35);
     }
   }
 }
@@ -342,7 +342,7 @@
 .home-hero__eyebrow {
   margin-bottom: 0.8rem;
   color: #9aa4b2;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -350,7 +350,7 @@
 
 .home-hero h1 {
   margin: 0;
-  font-size: clamp(1.95rem, 4vw, 3.1rem);
+  font-size: clamp(1.7rem, 3.2vw, 2.55rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
@@ -359,16 +359,16 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 42rem;
-  color: #d9dde3;
-  font-size: 1rem;
-  line-height: 1.65;
+  color: #d2d8df;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
 .home-hero__body {
   max-width: 40rem;
-  color: #9ca5b3;
-  font-size: 0.94rem;
-  line-height: 1.75;
+  color: #98a2b1;
+  font-size: 0.88rem;
+  line-height: 1.62;
 }
 
 .home-hero__links {
@@ -385,7 +385,7 @@
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.03);
     color: #eef2f6;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -407,7 +407,7 @@
 
   a {
     color: #aeb7c4;
-    font-size: 0.84rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -426,7 +426,7 @@
   padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(18, 23, 31, 0.96), rgba(11, 15, 20, 0.96));
+  background: linear-gradient(180deg, rgba(16, 20, 27, 0.98), rgba(9, 12, 17, 0.98));
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
 
   img {
@@ -443,11 +443,11 @@
 .home-hero__note {
   margin-top: 0.9rem;
   color: #8f99a7;
-  font-size: 0.8rem;
+  font-size: 0.74rem;
 }
 
 .home-section {
-  padding: 1.5rem 0 1.9rem;
+  padding: 1.2rem 0 1.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -460,15 +460,15 @@
   p {
     margin: 0.3rem 0 0;
     color: #8f99a7;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   h2 {
     margin-top: 0;
     padding-bottom: 0;
     border-bottom: 0;
-    color: #f4f6f8;
-    font-size: 1.08rem;
+    color: #eef2f6;
+    font-size: 0.98rem;
     letter-spacing: 0.01em;
   }
 }
@@ -496,7 +496,7 @@
 
 .home-list--compact {
   .home-card {
-    padding: 0.85rem 0.95rem;
+    padding: 0.78rem 0.9rem;
   }
 }
 
@@ -510,13 +510,14 @@
   h3 {
     margin-top: 0;
     margin-bottom: 0.55rem;
-    color: #f4f6f8;
-    font-size: 0.95rem;
+    color: #eef2f6;
+    font-size: 0.88rem;
   }
 
   p {
     margin-bottom: 0;
-    color: #9ca5b3;
+    color: #98a2b1;
+    font-size: 0.84rem;
   }
 }
 
@@ -527,20 +528,20 @@
 
 .home-card--pub {
   h3 {
-    font-size: 0.93rem;
+    font-size: 0.86rem;
     margin-bottom: 0.25rem;
   }
 
   .home-card__meta {
     margin: 0 0 0.5rem;
     color: #9aa4b2;
-    font-size: 0.8rem;
+    font-size: 0.74rem;
   }
 
   .home-card__authors {
     margin: 0;
-    color: #c0c6cf;
-    font-size: 0.88rem;
+    color: #b8c0cb;
+    font-size: 0.8rem;
   }
 }
 
@@ -553,7 +554,7 @@
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
-  padding: 0.9rem 1rem;
+  padding: 0.8rem 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
@@ -561,14 +562,14 @@
   h3 {
     margin-top: 0;
     margin-bottom: 0.35rem;
-    color: #f4f6f8;
-    font-size: 0.95rem;
+    color: #eef2f6;
+    font-size: 0.88rem;
   }
 
   p {
     margin-bottom: 0;
-    color: #9ca5b3;
-    font-size: 0.9rem;
+    color: #98a2b1;
+    font-size: 0.84rem;
   }
 
   @include breakpoint(max-width $medium) {
@@ -578,7 +579,7 @@
 
 .home-timeline__date {
   color: #9aa4b2;
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -589,8 +590,8 @@
 
   p {
     margin: 0;
-    color: #c0c6cf;
-    font-size: 0.94rem;
+    color: #b8c0cb;
+    font-size: 0.84rem;
   }
 }
 
