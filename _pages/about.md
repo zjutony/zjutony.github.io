@@ -17,8 +17,8 @@ redirect_from:
       {% if site.author.email %}<a class="home-hero__icon-link" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>{% endif %}
       {% if site.author.github %}<a class="home-hero__icon-link" href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>{% endif %}
       {% if site.author.linkedin %}<a class="home-hero__icon-link" href="https://www.linkedin.com/in/{{ site.author.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>{% endif %}
-      {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a>{% endif %}
-      {% if site.author.youtube %}<a href="https://www.youtube.com/@{{ site.author.youtube }}">YouTube</a>{% endif %}
+      {% if site.author.orcid %}<a class="home-hero__icon-link" href="{{ site.author.orcid }}" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid" aria-hidden="true"></i><span class="sr-only">ORCID</span></a>{% endif %}
+      {% if site.author.youtube %}<a class="home-hero__icon-link" href="https://www.youtube.com/@{{ site.author.youtube }}" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span></a>{% endif %}
     </div>
     <div class="home-hero__nav">
       <a href="#research">Research</a>
