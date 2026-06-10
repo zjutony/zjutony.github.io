@@ -40,18 +40,14 @@ redirect_from:
     <p>Robot learning is the future.</p>
   </div>
   <div class="home-list home-list--research home-list--compact">
-    <article class="home-card">
-      <h3>Robot learning for manipulation</h3>
-      <p>Learning policies and control strategies for cluttered, dynamic, and contact-rich environments.</p>
+    {% assign pubs = site.publications | sort: 'date' | reverse %}
+    {% for p in pubs limit:5 %}
+    <article class="home-card home-card--pub">
+      <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+      {% if p.date %}<p class="home-card__meta">{{ p.date | date: "%Y" }}{% if p.venue %} · {{ p.venue }}{% endif %}</p>{% endif %}
+      {% if p.authors %}<p class="home-card__authors">{{ p.authors }}</p>{% endif %}
     </article>
-    <article class="home-card">
-      <h3>Perception-driven robotics</h3>
-      <p>Combining computer vision with task-level intelligence so robot systems can understand and act robustly.</p>
-    </article>
-    <article class="home-card">
-      <h3>Language-enabled systems</h3>
-      <p>Exploring how large language models can help robots plan, explain, and coordinate actions more naturally.</p>
-    </article>
+    {% endfor %}
   </div>
 </section>
 
