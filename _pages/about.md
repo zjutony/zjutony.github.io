@@ -9,10 +9,8 @@ redirect_from:
 
 <div class="home-hero">
   <div class="home-hero__content">
-    <p class="home-hero__eyebrow">Personal Homepage</p>
     <h1>{{ site.author.name }}</h1>
-    <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, working on robot learning, computer vision, and autonomous systems.</p>
-    <p class="home-hero__body">Robot learning is the future. I focus on manipulation, perception, and practical systems, while also exploring startup ideas and product thinking.</p>
+    <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, working on robot learning, computer vision, and autonomous systems. Robot learning is the future. I focus on manipulation, perception, and practical systems, while also exploring startup ideas and product thinking.</p>
     <div class="home-hero__links">
       {% if site.author.email %}<a class="home-hero__icon-link" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>{% endif %}
       {% if site.author.github %}<a class="home-hero__icon-link" href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>{% endif %}

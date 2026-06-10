@@ -354,9 +354,9 @@
 
 .home-hero h1 {
   margin: 0;
-  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.2rem, 2.0vw, 1.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 .home-hero__lead {
@@ -364,15 +364,15 @@
   margin-bottom: 1rem;
   max-width: 42rem;
   color: #222222;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  font-size: 0.96rem;
+  line-height: 1.5;
 }
 
 .home-hero__body {
   max-width: 40rem;
   color: #444444;
-  font-size: 0.78rem;
-  line-height: 1.45;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .home-hero__links {
@@ -419,7 +419,7 @@
 
   a {
     color: #444444;
-    font-size: 0.72rem;
+    font-size: 0.96rem;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid transparent;
