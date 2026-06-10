@@ -11,14 +11,20 @@ redirect_from:
   <div class="home-hero__content">
     <p class="home-hero__eyebrow">Personal Homepage</p>
     <h1>{{ site.author.name }}</h1>
-    <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, focused on robot learning, computer vision, and autonomous systems.</p>
-    <p class="home-hero__body">I build research projects around intelligent manipulation, perception, and practical robotics. I am also interested in product thinking, startups, and turning ideas into systems that can work in the real world.</p>
+    <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, working on robot learning, computer vision, and autonomous systems.</p>
+    <p class="home-hero__body">Robot learning is the future. I focus on manipulation, perception, and practical systems, while also exploring startup ideas and product thinking.</p>
     <div class="home-hero__links">
       {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
       {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
       {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
       {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a>{% endif %}
       {% if site.author.youtube %}<a href="https://www.youtube.com/@{{ site.author.youtube }}">YouTube</a>{% endif %}
+    </div>
+    <div class="home-hero__nav">
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Working Experience</a>
+      <a href="#projects">Personal Projects</a>
     </div>
   </div>
 
@@ -28,28 +34,28 @@ redirect_from:
   </div>
 </div>
 
-<section class="home-section">
+<section class="home-section" id="research">
   <div class="home-section__head">
     <h2>Research</h2>
-    <p>Topics I am currently working on and building toward.</p>
+    <p>Robot learning is the future.</p>
   </div>
-  <div class="home-list home-list--research">
+  <div class="home-list home-list--research home-list--compact">
     <article class="home-card">
       <h3>Robot learning for manipulation</h3>
-      <p>Learning policies and control strategies that make robots more adaptive in cluttered, dynamic, and contact-rich environments.</p>
+      <p>Learning policies and control strategies for cluttered, dynamic, and contact-rich environments.</p>
     </article>
     <article class="home-card">
-      <h3>Perception for real-world robotics</h3>
-      <p>Combining computer vision with task-level intelligence so robot systems can understand scenes and act robustly.</p>
+      <h3>Perception-driven robotics</h3>
+      <p>Combining computer vision with task-level intelligence so robot systems can understand and act robustly.</p>
     </article>
     <article class="home-card">
-      <h3>Language-driven robot systems</h3>
+      <h3>Language-enabled systems</h3>
       <p>Exploring how large language models can help robots plan, explain, and coordinate actions more naturally.</p>
     </article>
   </div>
 </section>
 
-<section class="home-section">
+<section class="home-section" id="education">
   <div class="home-section__head">
     <h2>Education</h2>
   </div>
@@ -71,7 +77,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-section">
+<section class="home-section" id="experience">
   <div class="home-section__head">
     <h2>Working Experience</h2>
   </div>
@@ -93,7 +99,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-section">
+<section class="home-section" id="projects">
   <div class="home-section__head">
     <h2>Personal Projects</h2>
   </div>
@@ -104,7 +110,7 @@ redirect_from:
     </article>
     <article class="home-card home-card--accent">
       <h3>Technical writing and reading notes</h3>
-      <p>Selected reflections on books, papers, and practical engineering topics, kept as a running personal archive.</p>
+      <p>Selected reflections on books, papers, and practical engineering topics, kept as a running archive.</p>
     </article>
   </div>
 </section>
