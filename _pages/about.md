@@ -1,16 +1,114 @@
 ---
 permalink: /
 title: "About me"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am currently pursuing a master degree in Mechanical Engineering at [Zhejiang University](https://www.zju.edu.cn/) after completing my Bachelor's in Biosystems Engineering with a minor in Innovation and Entrepreneurship Management from the [Chu Kochen Honors College](http://ckc.zju.edu.cn/). My research interest includes robot, computer vision and Large Language Model.
+<div class="home-hero">
+  <div class="home-hero__content">
+    <p class="home-hero__eyebrow">Personal Homepage</p>
+    <h1>{{ site.author.name }}</h1>
+    <p class="home-hero__lead">Master's student in Mechanical Engineering at Zhejiang University, focused on robot learning, computer vision, and autonomous systems.</p>
+    <p class="home-hero__body">I build research projects around intelligent manipulation, perception, and practical robotics. I am also interested in product thinking, startups, and turning ideas into systems that can work in the real world.</p>
+    <div class="home-hero__links">
+      {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub</a>{% endif %}
+      {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+      {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a>{% endif %}
+      {% if site.author.youtube %}<a href="https://www.youtube.com/@{{ site.author.youtube }}">YouTube</a>{% endif %}
+    </div>
+  </div>
 
-I am also excited about startups and the future of autonomous robots. 
+  <div class="home-hero__portrait">
+    <img src="/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+    <div class="home-hero__note">Based in Hangzhou · Zhejiang University</div>
+  </div>
+</div>
 
-For more info
-------
-It is welcomed to contact me if you share similar research interests with me.
+<section class="home-section">
+  <div class="home-section__head">
+    <h2>Research</h2>
+    <p>Topics I am currently working on and building toward.</p>
+  </div>
+  <div class="home-list home-list--research">
+    <article class="home-card">
+      <h3>Robot learning for manipulation</h3>
+      <p>Learning policies and control strategies that make robots more adaptive in cluttered, dynamic, and contact-rich environments.</p>
+    </article>
+    <article class="home-card">
+      <h3>Perception for real-world robotics</h3>
+      <p>Combining computer vision with task-level intelligence so robot systems can understand scenes and act robustly.</p>
+    </article>
+    <article class="home-card">
+      <h3>Language-driven robot systems</h3>
+      <p>Exploring how large language models can help robots plan, explain, and coordinate actions more naturally.</p>
+    </article>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="home-section__head">
+    <h2>Education</h2>
+  </div>
+  <div class="home-timeline">
+    <div class="home-timeline__item">
+      <span class="home-timeline__date">2025 - Present</span>
+      <div>
+        <h3>Zhejiang University</h3>
+        <p>Master's student in Mechanical Engineering.</p>
+      </div>
+    </div>
+    <div class="home-timeline__item">
+      <span class="home-timeline__date">2021 - 2025</span>
+      <div>
+        <h3>Zhejiang University</h3>
+        <p>B.Eng. in Biosystems Engineering, with a minor in Innovation and Entrepreneurship Management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="home-section__head">
+    <h2>Working Experience</h2>
+  </div>
+  <div class="home-timeline">
+    <div class="home-timeline__item">
+      <span class="home-timeline__date">2026</span>
+      <div>
+        <h3>Robot learning intern</h3>
+        <p>Internship experience in robotics research and engineering.</p>
+      </div>
+    </div>
+    <div class="home-timeline__item">
+      <span class="home-timeline__date">2025</span>
+      <div>
+        <h3>Research intern</h3>
+        <p>Contributed to applied research in biomedical and robotic systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="home-section__head">
+    <h2>Personal Projects</h2>
+  </div>
+  <div class="home-list home-list--projects">
+    <article class="home-card home-card--accent">
+      <h3>Autonomous robot manipulation demos</h3>
+      <p>Prototype systems and experiments that connect perception, control, and learning for dexterous tasks.</p>
+    </article>
+    <article class="home-card home-card--accent">
+      <h3>Technical writing and reading notes</h3>
+      <p>Selected reflections on books, papers, and practical engineering topics, kept as a running personal archive.</p>
+    </article>
+  </div>
+</section>
+
+<section class="home-section home-section--footer">
+  <p>If you want to collaborate on robotics, machine learning, or product ideas, feel free to reach out.</p>
+</section>
