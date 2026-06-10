@@ -41,6 +41,13 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",
 .sh-info-card p:last-child{margin-bottom:0}
 .sh-info-card--accent{background:linear-gradient(180deg,#fff,#fafafa)}
 
+/* School logo in education timeline */
+.sh-school-logo{max-height:56px;display:inline-block;margin-right:12px;vertical-align:middle}
+
+@media (max-width:720px){
+  .sh-school-logo{max-height:44px;margin-bottom:8px}
+}
+
 @media (max-width:720px){
   .sh-page{padding:28px 16px 48px}
   .sh-hero{min-height:auto;padding-bottom:20px}
