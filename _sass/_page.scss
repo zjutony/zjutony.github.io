@@ -345,6 +345,23 @@
   }
 }
 
+/* Ensure the homepage main container is centered on all viewports */
+.home-page {
+  .page {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #main {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .home-hero__eyebrow {
   margin-bottom: 0.8rem;
   color: #666666;
