@@ -13,6 +13,10 @@ redirect_from:
     <div class="home-hero__note">Based in Hangzhou · Zhejiang University</div>
   </div>
 
+  <div class="home-hero__nav-row">
+    
+  </div>
+
   <div class="home-hero__content">
     <h1>About me</h1>
     <h2>Antian Zhao(Tony)</h2>

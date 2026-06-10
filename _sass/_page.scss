@@ -432,6 +432,23 @@
   }
 }
 
+.home-hero__nav-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6rem;
+
+  .home-hero__nav {
+    display: flex;
+    gap: 1rem;
+    a {
+      color: #444444;
+      font-size: 0.98rem;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
 .home-hero__portrait {
   justify-self: center;
   width: min(100%, 320px);
@@ -496,7 +513,8 @@
   gap: 1rem;
 
   &--research {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    align-items: start;
 
     @include breakpoint(max-width $medium) {
       grid-template-columns: 1fr;
@@ -540,22 +558,27 @@
 }
 
 .home-card--accent {
-  border-color: rgba(17, 17, 17, 0.12);
-  background: #fafafa;
-}
+  padding: 0.6rem 0.6rem;
+  border-left: 3px solid rgba(17,17,17,0.12);
+  background: transparent;
 
-.home-card--pub {
   h3 {
-    font-size: 0.88rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.92rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
   }
 
   .home-card__meta {
-    margin: 0 0 0.5rem;
-    color: #666666;
-    font-size: 0.66rem;
+    margin: 0 0 0.3rem;
+    color: #777777;
+    font-size: 0.72rem;
   }
 
+  .home-card__authors {
+    margin: 0;
+    color: #555555;
+    font-size: 0.78rem;
+  }
   .home-card__authors {
     margin: 0;
     color: #444444;
