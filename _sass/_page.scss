@@ -305,17 +305,44 @@
   grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.85fr);
   gap: 2rem;
   align-items: center;
-  padding: 2.25rem 0 3rem;
+  padding: 1.75rem 0 2.4rem;
 
   @include breakpoint(max-width $medium) {
     grid-template-columns: 1fr;
   }
 }
 
+.home-page {
+  background: #0b0f14;
+  color: #d4d8df;
+  color-scheme: dark;
+
+  .page__content {
+    color: #d4d8df;
+
+    p,
+    li,
+    dl {
+      font-size: 0.96rem;
+      line-height: 1.72;
+    }
+
+    h2,
+    h3 {
+      color: #f4f6f8;
+    }
+
+    a {
+      color: #e6ebf2;
+      text-decoration-color: rgba(230, 235, 242, 0.45);
+    }
+  }
+}
+
 .home-hero__eyebrow {
   margin-bottom: 0.8rem;
-  color: $gray;
-  font-size: 0.8rem;
+  color: #9aa4b2;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -323,7 +350,7 @@
 
 .home-hero h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  font-size: clamp(1.95rem, 4vw, 3.1rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
@@ -332,16 +359,16 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-width: 42rem;
-  color: $darker-gray;
-  font-size: 1.2rem;
-  line-height: 1.7;
+  color: #d9dde3;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .home-hero__body {
   max-width: 40rem;
-  color: $gray;
-  font-size: 1rem;
-  line-height: 1.85;
+  color: #9ca5b3;
+  font-size: 0.94rem;
+  line-height: 1.75;
 }
 
 .home-hero__links {
@@ -354,19 +381,19 @@
     display: inline-flex;
     align-items: center;
     padding: 0.7rem 1rem;
-    border: 1px solid $border-color;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.82);
-    color: $text-color;
-    font-size: 0.92rem;
+    background: rgba(255, 255, 255, 0.03);
+    color: #eef2f6;
+    font-size: 0.85rem;
     font-weight: 600;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
     &:hover {
       transform: translateY(-1px);
-      border-color: mix(#000, $border-color, 15%);
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
       text-decoration: none;
     }
   }
@@ -379,15 +406,15 @@
   margin-top: 1rem;
 
   a {
-    color: $darker-gray;
-    font-size: 0.92rem;
+    color: #aeb7c4;
+    font-size: 0.84rem;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 1px solid transparent;
 
     &:hover {
-      color: $text-color;
-      border-bottom-color: $text-color;
+      color: #f2f5f8;
+      border-bottom-color: #f2f5f8;
       text-decoration: none;
     }
   }
@@ -397,10 +424,10 @@
   justify-self: end;
   width: min(100%, 320px);
   padding: 1rem;
-  border: 1px solid $border-color;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(180deg, rgba(18, 23, 31, 0.96), rgba(11, 15, 20, 0.96));
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
 
   img {
     display: block;
@@ -415,13 +442,13 @@
 
 .home-hero__note {
   margin-top: 0.9rem;
-  color: $gray;
-  font-size: 0.88rem;
+  color: #8f99a7;
+  font-size: 0.8rem;
 }
 
 .home-section {
   padding: 1.5rem 0 1.9rem;
-  border-top: 1px solid rgba(122, 130, 136, 0.14);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .home-section__head {
@@ -432,14 +459,16 @@
 
   p {
     margin: 0.3rem 0 0;
-    color: $gray;
+    color: #8f99a7;
+    font-size: 0.9rem;
   }
 
   h2 {
     margin-top: 0;
     padding-bottom: 0;
     border-bottom: 0;
-    font-size: 1.35rem;
+    color: #f4f6f8;
+    font-size: 1.08rem;
     letter-spacing: 0.01em;
   }
 }
@@ -467,50 +496,51 @@
 
 .home-list--compact {
   .home-card {
-    padding: 0.95rem 1.05rem;
+    padding: 0.85rem 0.95rem;
   }
 }
 
 .home-card {
   padding: 1.1rem 1.2rem;
-  border: 1px solid $border-color;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.03);
   box-shadow: none;
 
   h3 {
     margin-top: 0;
     margin-bottom: 0.55rem;
-    font-size: 1rem;
+    color: #f4f6f8;
+    font-size: 0.95rem;
   }
 
   p {
     margin-bottom: 0;
-    color: $gray;
+    color: #9ca5b3;
   }
 }
 
 .home-card--accent {
-  border-color: rgba(122, 130, 136, 0.24);
-  background: linear-gradient(180deg, rgba(247, 247, 245, 0.9), rgba(255, 255, 255, 0.96));
+  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(18, 23, 31, 0.94), rgba(12, 16, 22, 0.98));
 }
 
 .home-card--pub {
   h3 {
-    font-size: 1rem;
+    font-size: 0.93rem;
     margin-bottom: 0.25rem;
   }
 
   .home-card__meta {
     margin: 0 0 0.5rem;
-    color: $darker-gray;
-    font-size: 0.88rem;
+    color: #9aa4b2;
+    font-size: 0.8rem;
   }
 
   .home-card__authors {
     margin: 0;
-    color: $gray;
-    font-size: 0.95rem;
+    color: #c0c6cf;
+    font-size: 0.88rem;
   }
 }
 
@@ -523,20 +553,22 @@
   display: grid;
   grid-template-columns: 140px minmax(0, 1fr);
   gap: 1rem;
-  padding: 1rem 1.1rem;
-  border: 1px solid $border-color;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.03);
 
   h3 {
     margin-top: 0;
     margin-bottom: 0.35rem;
-    font-size: 1rem;
+    color: #f4f6f8;
+    font-size: 0.95rem;
   }
 
   p {
     margin-bottom: 0;
-    color: $gray;
+    color: #9ca5b3;
+    font-size: 0.9rem;
   }
 
   @include breakpoint(max-width $medium) {
@@ -545,8 +577,8 @@
 }
 
 .home-timeline__date {
-  color: $darker-gray;
-  font-size: 0.88rem;
+  color: #9aa4b2;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -557,8 +589,8 @@
 
   p {
     margin: 0;
-    color: $darker-gray;
-    font-size: 1.02rem;
+    color: #c0c6cf;
+    font-size: 0.94rem;
   }
 }
 
