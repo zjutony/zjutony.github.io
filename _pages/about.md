@@ -46,9 +46,12 @@ redirect_from:
     {% assign pubs = site.publications | sort: 'date' | reverse %}
     {% for p in pubs limit:5 %}
     <article class="home-card home-card--pub">
-      <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
-      {% if p.date %}<p class="home-card__meta">{{ p.date | date: "%Y" }}{% if p.venue %} · {{ p.venue }}{% endif %}</p>{% endif %}
-      {% if p.authors %}<p class="home-card__authors">{{ p.authors }}</p>{% endif %}
+      {% if p.date %}<div class="home-card__year">{{ p.date | date: "%Y" }}</div>{% endif %}
+      <div class="home-card__content">
+        <h3><a href="{{ p.url }}">{{ p.title }}</a></h3>
+        {% if p.venue %}<p class="home-card__meta">{{ p.venue }}</p>{% endif %}
+        {% if p.authors %}<p class="home-card__authors">{{ p.authors }}</p>{% endif %}
+      </div>
     </article>
     {% endfor %}
   </div>

@@ -473,9 +473,41 @@
   max-width: 720px;
   margin: 0 auto;
   text-align: left;
-}
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 0.6rem;
+    align-items: start;
+    padding: 0.6rem 0.6rem;
+    background: transparent;
 
-.home-hero__note {
+    .home-card__year {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #666666;
+      text-align: center;
+      padding-top: 0.25rem;
+    }
+
+    .home-card__content {
+      h3 {
+        font-size: 0.92rem;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      .home-card__meta {
+        margin: 0.2rem 0 0.4rem;
+        color: #777777;
+        font-size: 0.72rem;
+      }
+
+      .home-card__authors {
+        margin: 0;
+        color: #888888;
+        font-size: 0.78rem;
+        font-style: italic;
+      }
+    }
   margin-top: 0.9rem;
   color: #666666;
   font-size: 0.66rem;
