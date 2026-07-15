@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — Antian Zhao (Tony)</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/simple-home.css">
 </head>
 <body>
   <main class="sh-page">
-    <header class="sh-hero sh-card">
+
+    <!-- ═══ HERO ═══ -->
+    <header class="sh-hero">
       <img class="sh-avatar" src="/images/personal_.png" alt="Antian Zhao (Tony)">
       <h1 class="sh-title">About me</h1>
       <h2 class="sh-name">Antian Zhao (Tony)</h2>
-      <p class="sh-lead">Master's student in Mechanical Engineering at Zhejiang University, I focus on robotics 🤖 and LLMs, while exploring startup ideas and product thinking.</p>
+      <p class="sh-lead">Master's student in Mechanical Engineering at Zhejiang University, focusing on robotics, micro-manipulation, and LLMs — while exploring startup ideas and product thinking.</p>
 
       <div class="sh-social">
         <a href="mailto:antianzhao@zju.edu.cn" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -25,115 +27,159 @@
       </div>
 
       <nav class="sh-nav" aria-label="Section navigation">
-        <a href="#research">Research</a>
         <a href="#education">Education</a>
-        <a href="#experience">Working Experience</a>
-        <a href="#projects">Personal Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
       </nav>
     </header>
 
-    <div class="sh-content">
-      <section class="sh-section" id="research">
-        <div class="sh-section-head">
-          <h3>Research</h3>
-          <p>Selected publications on micromanipulation, microinjection, and vision-driven robotic systems.</p>
+    <!-- ═══ EDUCATION ═══ -->
+    <section class="sh-section" id="education">
+      <p class="sh-section-label">Education</p>
+      <div class="sh-timeline">
+        <div class="sh-timeline-item">
+          <span class="sh-timeline-year">2024 – now</span>
+          <div>
+            <img class="sh-school-logo" src="/images/Zhejiang_University_Logo.svg.png" alt="Zhejiang University logo">
+            <h4><a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></h4>
+            <p>M.S. in Mechanical Engineering</p>
+          </div>
         </div>
-        <div class="sh-research-list">
-          <article class="sh-paper">
-            <div class="sh-paper-year">2025</div>
-            <div class="sh-paper-body">
-              <h4><a href="https://ieeexplore.ieee.org/abstract/document/11230522/">Scheduling Adaptive Imitation Learning for Long-Horizon Dexterous Robot Micromanipulation of Deformable Cell</a></h4>
-              <p>IEEE Robotics and Automation Letters</p>
-            </div>
-          </article>
-          <article class="sh-paper">
-            <div class="sh-paper-year">2025</div>
-            <div class="sh-paper-body">
-              <h4><a href="https://www.nature.com/articles/s41378-024-00809-y">Design and developing a robot-assisted cell batch microinjection system for zebrafish embryo</a></h4>
-              <p>Microsystems &amp; Nanoengineering</p>
-            </div>
-          </article>
-          <article class="sh-paper">
-            <div class="sh-paper-year">2025</div>
-            <div class="sh-paper-body">
-              <h4><a href="https://iopscience.iop.org/article/10.1088/1742-6596/3101/1/012014">Robotic Cell Micromanipulation for Posture Adjustment of Zebrafish Embryonic Cells</a></h4>
-              <p>The First International Conference on Cyborg and Bionic Systems</p>
-            </div>
-          </article>
-          <article class="sh-paper">
-            <div class="sh-paper-year">2023</div>
-            <div class="sh-paper-body">
-              <h4><a href="https://www.sciencedirect.com/science/article/pii/S0263224123010746">Design and testing of a new microinjector with FBG force sensor for robot-assisted single cell microinjection</a></h4>
-              <p>Measurement</p>
-            </div>
-          </article>
+        <div class="sh-timeline-item">
+          <span class="sh-timeline-year">2020 – 2024</span>
+          <div>
+            <img class="sh-school-logo" src="/images/Zhejiang_University_Logo.svg.png" alt="Zhejiang University logo">
+            <h4><a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></h4>
+            <p>B.S. in Biosystems Engineering</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="sh-section" id="education">
-        <div class="sh-section-head">
-          <h3>Education</h3>
-          <p>Academic training in engineering, robotics, and biosystems.</p>
-        </div>
-        <div class="sh-timeline">
-          <article class="sh-timeline-item">
-            <div class="sh-timeline-year">2024 - now</div>
-            <div>
-              <img class="sh-school-logo" src="/images/Zhejiang_University_Logo.svg.png" alt="Zhejiang University logo">
-              <h4><a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></h4>
-              <p>M.S. in Mechanical Engineering.</p>
-            </div>
-          </article>
-          <article class="sh-timeline-item">
-            <div class="sh-timeline-year">2020 - 2024</div>
-            <div>
-              <img class="sh-school-logo" src="/images/Zhejiang_University_Logo.svg.png" alt="Zhejiang University logo">
-              <h4><a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></h4>
-              <p>B.S. in Biosystems Engineering.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+    <!-- ═══ PUBLICATIONS (text-only) ═══ -->
+    <section class="sh-section" id="publications">
+      <p class="sh-section-label">Publications</p>
+      <div class="sh-pubs">
 
-      <section class="sh-section" id="experience">
-        <div class="sh-section-head">
-          <h3>Working Experience</h3>
-          <p>Research and project experience in robotics, micro-manipulation, and automation.</p>
+        <div class="sh-pub-row">
+          <span class="sh-pub-year">2025</span>
+          <div>
+            <p class="sh-pub-title">
+              <a href="https://ieeexplore.ieee.org/abstract/document/11230522/" target="_blank" rel="noopener">Scheduling Adaptive Imitation Learning for Long-Horizon Dexterous Robot Micromanipulation of Deformable Cell</a>
+            </p>
+            <p class="sh-pub-venue">IEEE Robotics and Automation Letters</p>
+          </div>
+          <div class="sh-pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11230522/" target="_blank" rel="noopener">IEEE <i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-        <div class="sh-cards">
-          <article class="sh-info-card">
-            <h4><a href="/assets/media/micro_operation/" target="_blank" rel="noopener">Research on Automated Micro-Operation System for Bio-breeding</a></h4>
-            <p>2023.12 - 2024.5 · Zhejiang University, Micro-nano Manipulation Lab</p>
-            <p>Built a micro-injection platform based on microfluidic chips for zebrafish embryo cells and proposed a YOLOv8-based keypoint detection algorithm for cell location.</p>
-            <p><a href="/assets/media/micro_operation/" target="_blank" rel="noopener">More assets</a></p>
-          </article>
-          <article class="sh-info-card">
-            <h4><a href="/assets/media/asabe/" target="_blank" rel="noopener">ASABE Robotics Student Design Competition</a></h4>
-            <p>2023.4 - 2023.7 · Zhejiang University, Agricultural Robot Club</p>
-            <p>Led a team to design a cotton-picking robot using machine vision algorithms on Jetson Nano, communicating with Arduino for control.</p>
-            <p><a href="/assets/media/asabe/Poster_2023ASABE_Robotics_Student_Design_Competition_Team_DAD.pdf" target="_blank" rel="noopener">Download poster (PDF)</a></p>
-            <p><a href="/assets/media/videos/" target="_blank" rel="noopener">Related videos</a> (upload to <code>/assets/media/videos/</code>)</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="sh-section" id="projects">
-        <div class="sh-section-head">
-          <h3>Personal Projects</h3>
-          <p>Small systems and ideas that explore robotics, learning, and product thinking.</p>
+        <div class="sh-pub-row">
+          <span class="sh-pub-year">2025</span>
+          <div>
+            <p class="sh-pub-title">
+              <a href="https://www.nature.com/articles/s41378-024-00809-y" target="_blank" rel="noopener">Design and developing a robot-assisted cell batch microinjection system for zebrafish embryo</a>
+            </p>
+            <p class="sh-pub-venue">Microsystems &amp; Nanoengineering (Nature)</p>
+          </div>
+          <div class="sh-pub-links">
+            <a href="https://www.nature.com/articles/s41378-024-00809-y" target="_blank" rel="noopener">Nature <i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-        <div class="sh-cards sh-cards-projects">
-          <article class="sh-info-card sh-info-card--accent">
-            <h4><a href="https://github.com/zjutony/RosLearningRecord" target="_blank" rel="noopener">Autonomous robot manipulation demos</a></h4>
-            <p>Prototype systems connecting perception, control, and learning for dexterous tasks.</p>
-          </article>
-          <article class="sh-info-card sh-info-card--accent">
-            <h4><a href="https://github.com/zjutony?tab=repositories" target="_blank" rel="noopener">Technical writing and reading notes</a></h4>
-            <p>Selected reflections on books, papers, and practical engineering topics, kept as a running archive.</p>
-          </article>
+
+        <div class="sh-pub-row">
+          <span class="sh-pub-year">2025</span>
+          <div>
+            <p class="sh-pub-title">
+              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3101/1/012014" target="_blank" rel="noopener">Robotic Cell Micromanipulation for Posture Adjustment of Zebrafish Embryonic Cells</a>
+            </p>
+            <p class="sh-pub-venue">Int. Conf. on Cyborg and Bionic Systems</p>
+          </div>
+          <div class="sh-pub-links">
+            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3101/1/012014" target="_blank" rel="noopener">IOPScience <i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-      </section>
+
+        <div class="sh-pub-row">
+          <span class="sh-pub-year">2023</span>
+          <div>
+            <p class="sh-pub-title">
+              <a href="https://www.sciencedirect.com/science/article/pii/S0263224123010746" target="_blank" rel="noopener">Design and testing of a new microinjector with FBG force sensor for robot-assisted single cell microinjection</a>
+            </p>
+            <p class="sh-pub-venue">Measurement</p>
+          </div>
+          <div class="sh-pub-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0263224123010746" target="_blank" rel="noopener">ScienceDirect <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="sh-section" id="projects">
+      <p class="sh-section-label">Projects</p>
+
+      <!-- Micro-Operation System -->
+      <article class="sh-pub">
+        <div class="sh-pub-media">
+          <img src="/assets/media/micro_operation/%E7%B3%BB%E7%BB%9F%E6%95%B4%E4%BD%93.png" alt="Micro-operation system overview" loading="lazy">
+        </div>
+        <div class="sh-pub-body">
+          <span class="sh-pub-year">2023 – 2024</span>
+          <h4 class="sh-pub-title"><a href="/assets/media/micro_operation/" target="_blank" rel="noopener">Automated Micro-Operation System</a></h4>
+          <p class="sh-pub-venue">Micro-injection platform with microfluidic chips and YOLOv8-based keypoint detection.</p>
+          <div class="sh-pub-links">
+            <a href="/assets/media/micro_operation/" target="_blank" rel="noopener"><i class="fas fa-folder"></i> Materials</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0263224123010746" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ASABE -->
+      <article class="sh-pub">
+        <div class="sh-pub-media">
+          <img src="/assets/media/asabe/asabe_fig4.png" alt="ASABE competition team" loading="lazy">
+        </div>
+        <div class="sh-pub-body">
+          <span class="sh-pub-year">2023</span>
+          <h4 class="sh-pub-title"><a href="http://www.caefs.zju.edu.cn/2023/0804/c69097a2787754/page.htm" target="_blank" rel="noopener">ASABE Robotics Competition — Champion</a></h4>
+          <p class="sh-pub-venue">Cotton-picking robot with Jetson Nano and Arduino.</p>
+          <div class="sh-pub-links">
+            <a href="http://www.caefs.zju.edu.cn/2023/0804/c69097a2787754/page.htm" target="_blank" rel="noopener"><i class="fas fa-trophy"></i> Competition Page</a>
+            <a href="/assets/media/asabe/" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Poster</a>
+            <a href="http://www.caefs.zju.edu.cn/2023/0822/c69097a2792454/page.htm" target="_blank" rel="noopener"><i class="fas fa-newspaper"></i> Coverage</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ROS Navigation -->
+      <article class="sh-pub">
+        <div class="sh-pub-media">
+          <video controls preload="metadata" poster="/assets/media/ros_nav/env.png">
+            <source src="/assets/media/ros_nav/slam_nav.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="sh-pub-body">
+          <span class="sh-pub-year">Personal</span>
+          <h4 class="sh-pub-title"><a href="https://github.com/zjutony/RosLearningRecord" target="_blank" rel="noopener">ROS-based autonomous navigation</a></h4>
+          <p class="sh-pub-venue">Two-wheel differential mobile robot with SLAM and navigation on ROS.</p>
+          <div class="sh-pub-links">
+            <a href="https://github.com/zjutony/RosLearningRecord" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <div class="sh-footer">
+      &copy; <span id="year"></span> Antian Zhao &mdash;
+      <a href="https://github.com/zjutony">GitHub</a> &middot;
+      <a href="mailto:antianzhao@zju.edu.cn">Email</a>
     </div>
   </main>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

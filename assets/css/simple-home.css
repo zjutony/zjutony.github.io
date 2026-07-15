@@ -1,63 +1,141 @@
-:root{--bg:#fff;--text:#111;--muted:#666;--accent:#000;--avatar-size:260px}
-*{box-sizing:border-box}
+:root {
+  --bg: #fff;
+  --text: #111;
+  --muted: #666;
+  --border: #e0e0e0;
+  --avatar-size: 180px;
+}
+*,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:var(--text)}
-.sh-page{max-width:980px;margin:0 auto;padding:48px 20px 72px}
-.sh-hero,.sh-section{width:100%}
-.sh-card{text-align:center}
-.sh-hero{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100vh - 96px);padding-bottom:32px}
-.sh-avatar{width:var(--avatar-size);height:var(--avatar-size);object-fit:cover;border-radius:50%;box-shadow:0 30px 60px rgba(0,0,0,0.12);display:block;margin:0 auto 26px;border:4px solid #fff}
-.sh-title{margin:0;font-size:1rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;font-weight:700;text-align:center}
-.sh-name{margin:6px 0 12px;font-size:2.1rem;letter-spacing:-0.02em;text-align:center}
-.sh-lead{max-width:68ch;margin:0 auto 20px;font-size:1.02rem;line-height:1.6;color:#333;text-align:left}
-.sh-social{display:flex;gap:12px;justify-content:center;margin-top:8px}
-.sh-social a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #e6e6e6;border-radius:999px;color:var(--text);text-decoration:none;font-size:18px}
-.sh-social a:hover{background:#f4f4f4}
-.sh-nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
-.sh-nav a{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid #e7e7e7;border-radius:999px;color:var(--text);text-decoration:none;font-size:.92rem;font-weight:600;background:#fff}
-.sh-nav a:hover{border-color:#cfcfcf;box-shadow:0 6px 16px rgba(0,0,0,.05)}
-.sh-content{margin-top:24px}
-.sh-section{padding:34px 0;border-top:1px solid #ececec}
-.sh-section:first-of-type{border-top:0}
-.sh-section-head{display:grid;grid-template-columns:220px 1fr;gap:20px;align-items:start;margin-bottom:18px}
-.sh-section-head h3{margin:0;font-size:1rem;letter-spacing:.08em;text-transform:uppercase}
-.sh-section-head p{margin:0;color:var(--muted);line-height:1.6}
-.sh-research-list{display:grid;gap:12px}
-.sh-paper{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid #f0f0f0}
-.sh-paper:last-child{border-bottom:0}
-.sh-paper-year{font-size:.98rem;font-weight:700;color:#777;text-align:center;padding-top:3px}
-.sh-paper-body h4,.sh-info-card h4,.sh-timeline-item h4{margin:0 0 6px;font-size:1rem;line-height:1.45}
-.sh-paper-body a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent}
-.sh-paper-body a:hover{text-decoration:none;border-bottom-color:#111}
-.sh-paper-body p{margin:0;color:#777;font-size:.9rem}
-.sh-timeline-item h4 a,.sh-info-card h4 a{color:var(--text);text-decoration:none}
-.sh-timeline-item h4 a:hover,.sh-info-card h4 a:hover{text-decoration:underline}
-.sh-timeline{display:grid;gap:12px}
-.sh-timeline-item{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid #f0f0f0}
-.sh-timeline-item:last-child{border-bottom:0}
-.sh-timeline-year{font-size:.92rem;font-weight:700;color:#777;text-align:center;padding-top:2px}
-.sh-timeline-item p{margin:0;color:#444;line-height:1.6}
-.sh-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.sh-info-card{padding:18px;border:1px solid #ececec;border-radius:20px;background:#fff;box-shadow:0 12px 32px rgba(0,0,0,.04)}
-.sh-info-card p{margin:0 0 10px;color:#444;line-height:1.65}
-.sh-info-card p:last-child{margin-bottom:0}
-.sh-info-card--accent{background:linear-gradient(180deg,#fff,#fafafa)}
-
-/* School logo in education timeline */
-.sh-school-logo{max-height:56px;display:inline-block;margin-right:12px;vertical-align:middle}
-
-@media (max-width:720px){
-  .sh-school-logo{max-height:44px;margin-bottom:8px}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased
 }
 
-@media (max-width:720px){
-  .sh-page{padding:28px 16px 48px}
-  .sh-hero{min-height:auto;padding-bottom:20px}
-  .sh-avatar{width:calc(var(--avatar-size) * 0.78);height:calc(var(--avatar-size) * 0.78)}
-  .sh-name{font-size:1.6rem}
-  .sh-lead{text-align:left}
-  .sh-section-head{grid-template-columns:1fr;gap:8px}
-  .sh-paper,.sh-timeline-item{grid-template-columns:1fr;gap:8px}
-  .sh-paper-year,.sh-timeline-year{text-align:left}
-  .sh-cards{grid-template-columns:1fr}
+/* ───── Page layout ───── */
+.sh-page{max-width:880px;margin:0 auto;padding:36px 24px 64px}
+
+/* ───── Hero ───── */
+.sh-hero{text-align:center;padding:16px 0 28px}
+.sh-avatar{
+  width:var(--avatar-size);height:var(--avatar-size);object-fit:cover;
+  border-radius:50%;box-shadow:0 16px 40px rgba(0,0,0,.10);
+  display:block;margin:0 auto 18px;border:3px solid #fff
+}
+.sh-title{margin:0;font-size:.78rem;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.sh-name{margin:4px 0 8px;font-size:1.7rem;letter-spacing:-.02em;font-weight:700}
+.sh-lead{max-width:62ch;margin:0 auto 14px;font-size:.92rem;line-height:1.6;color:#444}
+
+.sh-social{display:flex;gap:8px;justify-content:center;margin-top:4px;flex-wrap:wrap}
+.sh-social a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:36px;border:1px solid var(--border);border-radius:999px;
+  color:var(--text);text-decoration:none;font-size:15px;transition:.15s
+}
+.sh-social a:hover{background:#f5f5f5;border-color:#bbb}
+
+.sh-nav{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px}
+.sh-nav a{
+  display:inline-flex;align-items:center;padding:6px 14px;
+  border:1px solid var(--border);border-radius:999px;
+  color:var(--text);text-decoration:none;font-size:.82rem;font-weight:500;background:#fff;transition:.15s
+}
+.sh-nav a:hover{border-color:#aaa;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+
+/* ───── Section ───── */
+.sh-section{padding:28px 0;border-top:1px solid #eee}
+.sh-section:first-of-type{border-top:none}
+.sh-section-label{
+  font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:#999;margin:0 0 18px
+}
+
+/* ───── Text-only publication rows ───── */
+.sh-pubs{display:grid;gap:4px}
+.sh-pub-row{
+  display:grid;grid-template-columns:60px 1fr 100px;gap:14px;
+  align-items:center;padding:10px 0;border-bottom:1px solid #f2f2f2
+}
+.sh-pub-row:last-child{border-bottom:none}
+.sh-pub-row .sh-pub-year{font-size:.85rem;font-weight:600;color:#999;text-align:center;padding-top:2px}
+.sh-pub-row .sh-pub-title{margin:0;font-size:.9rem;line-height:1.4;font-weight:500}
+.sh-pub-row .sh-pub-title a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent}
+.sh-pub-row .sh-pub-title a:hover{border-bottom-color:#aaa}
+.sh-pub-row .sh-pub-venue{font-size:.78rem;color:#888;margin:2px 0 0}
+.sh-pub-row .sh-pub-links{text-align:right}
+.sh-pub-row .sh-pub-links a{
+  font-size:.78rem;font-weight:500;color:#555;text-decoration:none;white-space:nowrap
+}
+.sh-pub-row .sh-pub-links a:hover{color:#000;text-decoration:underline}
+
+/* ───── Paper entry with media (Projects) ───── */
+.sh-pub{
+  display:grid;grid-template-columns:220px 1fr;gap:20px;
+  padding:18px 16px;border-radius:16px;transition:.12s;
+  border-bottom:1px solid #f2f2f2
+}
+.sh-pub:last-child{border-bottom:none}
+.sh-pub:hover{background:#fafafa}
+
+.sh-pub-media{line-height:0}
+.sh-pub-media video,
+.sh-pub-media img{
+  width:100%;aspect-ratio:16/9;object-fit:cover;
+  border-radius:10px;border:1px solid #e4e4e4;background:#f4f4f4;display:block
+}
+.sh-pub-media video{background:#000}
+
+.sh-pub-body{min-width:0}
+.sh-pub-year{font-size:.78rem;font-weight:600;color:#aaa;letter-spacing:.04em}
+.sh-pub-title{margin:2px 0 4px;font-size:.95rem;line-height:1.4;font-weight:600}
+.sh-pub-title a{color:var(--text);text-decoration:none}
+.sh-pub-title a:hover{text-decoration:underline}
+.sh-pub-authors{font-size:.82rem;color:#555;margin:0 0 2px;line-height:1.5}
+.sh-pub-venue{font-size:.8rem;color:#888;margin:0 0 8px;font-style:italic}
+.sh-pub-links{display:flex;flex-wrap:wrap;gap:6px}
+.sh-pub-links a{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:.78rem;font-weight:500;color:#555;text-decoration:none;
+  padding:3px 10px;border-radius:999px;border:1px solid var(--border);background:#fff;transition:.12s
+}
+.sh-pub-links a:hover{border-color:#bbb;background:#f7f7f7;color:#111}
+
+/* ───── Timeline (Education) ───── */
+.sh-timeline{display:grid;gap:10px}
+.sh-timeline-item{
+  display:grid;grid-template-columns:110px 1fr;gap:16px;
+  align-items:start;padding:14px 0;border-bottom:1px solid #f2f2f2
+}
+.sh-timeline-item:last-child{border-bottom:none}
+.sh-timeline-year{font-size:.88rem;font-weight:600;color:#999;text-align:center;padding-top:4px}
+.sh-timeline-item h4{margin:0 0 4px;font-size:1rem;line-height:1.4}
+.sh-timeline-item h4 a{color:var(--text);text-decoration:none}
+.sh-timeline-item h4 a:hover{text-decoration:underline}
+.sh-timeline-item p{margin:0;color:#555;font-size:.88rem;line-height:1.5}
+.sh-school-logo{max-height:44px;display:inline-block;margin-right:10px;vertical-align:middle}
+
+
+/* ───── Footer ───── */
+.sh-footer{text-align:center;padding:28px 0 0;color:#aaa;font-size:.8rem;border-top:1px solid #eee;margin-top:4px}
+.sh-footer a{color:#777;text-decoration:none}
+.sh-footer a:hover{color:#111;text-decoration:underline}
+
+/* ───── Responsive ───── */
+@media (max-width:700px){
+  .sh-page{padding:20px 14px 40px}
+  .sh-avatar{width:130px;height:130px}
+  .sh-name{font-size:1.35rem}
+  .sh-lead{font-size:.88rem;text-align:left}
+  .sh-pub{grid-template-columns:160px 1fr;gap:14px;padding:14px 8px}
+  .sh-pub-row{grid-template-columns:50px 1fr 90px;gap:10px}
+  .sh-timeline-item{grid-template-columns:1fr;gap:6px}
+  .sh-timeline-year{text-align:left}
+  .sh-section{padding:20px 0}
+}
+@media (max-width:480px){
+  .sh-pub{grid-template-columns:1fr;gap:10px}
+  .sh-pub-media{max-width:220px}
+  .sh-pub-row{grid-template-columns:1fr;gap:4px}
+  .sh-pub-row .sh-pub-year{text-align:left;font-size:.8rem}
+  .sh-pub-row .sh-pub-links{text-align:left}
 }

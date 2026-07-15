@@ -9,7 +9,8 @@ tags:
 ---
 
 > 记录阅读书籍《置身事内》的相关心得和补充  
-原版笔记记录在飞书，可以获得更好的阅读体验：[《置身事内》读书笔记](https://ai.feishu.cn/docx/GIRAdYwrgopEQix8qpJckFeWnNd)
+原版笔记记录在飞书，可以获得更好的阅读体验：[《置身事内》读书笔记](https://ai.feishu.cn/docx/GIRAdYwrgopEQix8qpJckFeWnNd) 
+
 # 读书笔记：《置身事内》
 📖借鉴*李尚龙*提到的阅读方法,从面到点的来阅读这本书:   
 1. 第一步：阅读整本书的序言、目录、结尾；  

@@ -4,11 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Micro-operation — Media</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:32px;background:#fafafa;color:#111}
+    main{max-width:960px;margin:0 auto;background:#fff;border:1px solid #ececec;border-radius:24px;padding:24px;box-shadow:0 12px 32px rgba(0,0,0,.05)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+    img,video{width:100%;border-radius:16px;border:1px solid #e8e8e8;background:#000;object-fit:cover}
+    video{aspect-ratio:16/9}
+    img{aspect-ratio:16/9;background:#f7f7f7}
+    a{color:#111}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{display:inline-flex;padding:10px 14px;border:1px solid #e1e1e1;border-radius:999px;text-decoration:none;font-weight:600;background:#fff}
+    @media (max-width:800px){.grid{grid-template-columns:1fr}body{padding:16px}}
+  </style>
 </head>
 <body>
-  <h1>Automated Micro-Operation System — Media</h1>
-  <p>Place related assets here. For example:</p>
-  <pre>/assets/media/micro_operation/experiment_video.mp4</pre>
-  <p>I can add files if you provide them.</p>
+  <main>
+    <h1>Automated Micro-Operation System — Media</h1>
+    <p>Homepage preview assets for the micro-operation project and related paper demo.</p>
+
+    <div class="grid">
+      <section>
+        <video controls preload="metadata" poster="/assets/media/micro_operation/系统整体.png">
+          <source src="/assets/media/micro_operation/show_ppt_1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="actions">
+          <a class="btn" href="/assets/media/micro_operation/show_ppt_1.mp4" target="_blank" rel="noopener">Open video</a>
+          <a class="btn" href="https://www.sciencedirect.com/science/article/pii/S0263224123010746" target="_blank" rel="noopener">Related paper</a>
+        </div>
+      </section>
+
+      <section>
+        <img src="/assets/media/micro_operation/系统整体.png" alt="Micro-operation system overview">
+        <div class="actions">
+          <a class="btn" href="/assets/media/micro_operation/show_ppt_1.mp4" target="_blank" rel="noopener">Watch demo video</a>
+          <a class="btn" href="/assets/media/micro_operation/" target="_blank" rel="noopener">Folder index</a>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
